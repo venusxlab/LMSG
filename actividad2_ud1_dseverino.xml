@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actividad1>
+    <parrafo1>
+        <lenguaje tipo="html">
+            <creacion>
+                <fecha tipo"año">1891</fecha>
+                <lugar>Europa</lugar>
+            </creacion>
+            <objetivo>compartir documentos científicos en la web</objetivo>
+            <evolucion>
+                <html tipo="5">
+                    <elementos>
+                        <estructura></estructura>
+                        <audio></audio>
+                        <video></video>
+                        <graficos></graficos>
+                        <accesibilidad></accesibilidad>
+                    </elementos>
+                </html>
+            </evolucion>
+            <uso>
+                <css>
+                    <presentacion tipo="visual"></presentacion>
+                </css>
+                <javascript>Interaccion dinámica</javascript>
+            </uso>
+        </lenguaje>
+    </parrafo1>
+    <parrafo2>
+        <revfrancesa>
+            <inicio>
+                <fecha tipo="año">1789</fecha>
+                <lugar>Europa</lugar>
+            </inicio>
+            <causas>
+                <desigualdad>Social</desigualdad>
+                <crisis>economica</crisis>
+                <influencia>Ideas ilustradas</influencia>
+            </causas>
+            <acontecimientos>
+                <toma>Bastilla</toma>
+                <declaracion>derechos del hombre y del ciudadano</declaracion>
+                <proclamacion>Primera republica</proclamacion>
+            </acontecimientos>
+            <consecuencias>
+                <zona>Continente</zona>
+                <transforma>Politica y sociedad</transforma>
+            </consecuencias>
+        </revfrancesa>
+    </parrafo2>
+    <parrafo3>
+        <baloncesto>
+            <invencion>
+                <fecha tipo="año">1891</fecha>
+                <creador>James Naismith</creador>
+                <lugar>Springfield, massachusetts</lugar>
+            </invencion>
+            <normas>
+                <equipos>Dos</equipos>
+            </normas>
+            <objetivo>
+                <zona>Aro contrario</zona>
+                <anotar>Puntos</anotar>
+            </objetivo>
+            <competiciones>
+                <nba>
+                    <lugar>Estados unidos</lugar>
+                </nba>
+                <jjoo>
+                    <nombre>juegos olimpicos</nombre>
+                    <fecha tipo="año">1936</fecha>
+                </jjoo>
+            </competiciones>
+        </baloncesto>
+    </parrafo3>
+    <parrafo4>
+        <nutricion>
+            <proceso tipo"biologico">
+                
+            </proceso>
+        </nutricion>
+    </parrafo4>    
+</actividad1>

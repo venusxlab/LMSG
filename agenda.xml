@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <agenda>EJERCICIO 1
+        <contacto id="1">
+            <nombre>PEPITO PEPITO</nombre>
+            <telefono tipo="movil">123456789</telefono>
+            <email>pepito1@mail.com</email>
+        </contacto>
+        <contacto id="2">
+            <nombre>PAPA PAPA</nombre>
+            <telefono tipo="fijo">987654321</telefono>
+            <email>papa@mail.es</email>
+        </contacto>
+        <contacto id="3">
+            <nombre>PEPE PEPE</nombre>
+            <telefono tipo="trabajo">678912345</telefono>
+            <email>pepe@mail.es</email>
+        </contacto>
+    </agenda>

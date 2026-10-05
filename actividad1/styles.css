@@ -1,0 +1,21 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo-principal {
+    color: crimson;
+    text-align: center;
+}
+
+.caja {
+    width: 70%;
+    margin: 20px;
+    padding: 5%;
+    border: 6px solid coral;
+}
+
+#caja-dos {
+    background-color: azure;
+    border: 5px dashed darkgoldenrod;
+}

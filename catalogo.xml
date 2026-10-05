@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>EJERCICIO 2
+        <categoria nombre="periferico">
+            <producto sku="1">
+                <nombre>Teclado</nombre>
+                <precio moneda="EUR">20</precio>
+                <stock>15</stock>
+            </producto>
+            <producto sku="2">
+                <nombre>Ratón</nombre>
+                <precio moneda="EUR">15</precio>
+                <stock>10</stock>
+            </producto>
+        </categoria>
+        <categoria nombre="almacenamiento">
+            <producto sku="3">
+                <nombre>Almacenamiento 1TB</nombre>
+                <precio moneda="EUR">50</precio>
+                <stock>20</stock>
+            </producto>
+            <producto sku="4">
+                <nombre>Almacenamiento 5TB</nombre>
+                <precio moneda="EUR">120</precio>
+                <stock>5</stock>
+            </producto>
+        </categoria>
+    </catalogo>

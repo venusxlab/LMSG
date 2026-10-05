@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <horario>
+        <linea id="1">
+            <origen>Barcelona</origen>
+            <destino>Santander</destino>
+            <duracion>60000</duracion>
+            <salidas>
+                <salida hora="12:30"></salida>
+                <salida hora="17:45"></salida>
+            </salidas>
+        </linea>
+        <linea id="2">
+        <origen>Asturias</origen>
+            <destino>Santander</destino>
+            <duracion>130</duracion>
+            <salidas>
+                <salida hora="10:15"></salida>
+                <salida hora="21:45"></salida>
+            </salidas>
+        </linea>
+    </horario>

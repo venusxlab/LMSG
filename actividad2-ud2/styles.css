@@ -1,0 +1,30 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "CajaLogo1 CajaLogo2 CajaLogo3 CajaLogo4 CajaLogo5"
+    "TextoLogo1 TextoLogo2 TextoLogo3 TextoLogo4 TextoLogo5";
+  width: 100%;
+}
+
+.CajaLogo1 { grid-area: CajaLogo1; }
+
+.CajaLogo2 { grid-area: CajaLogo2; }
+
+.CajaLogo3 { grid-area: CajaLogo3; }
+
+.CajaLogo4 { grid-area: CajaLogo4; }
+
+.CajaLogo5 { grid-area: CajaLogo5; }
+
+.TextoLogo1 { grid-area: TextoLogo1; }
+
+.TextoLogo2 { grid-area: TextoLogo2; }
+
+.TextoLogo3 { grid-area: TextoLogo3; }
+
+.TextoLogo4 { grid-area: TextoLogo4; }
+
+.TextoLogo5 { grid-area: TextoLogo5; }

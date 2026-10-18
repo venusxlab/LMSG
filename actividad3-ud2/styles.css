@@ -43,3 +43,12 @@ table.redTable tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
+
+table.redTable th.destacado, table.redTable td.destacado {
+  background-color: #fbd5ba;
+  font-weight: bold;
+}
+.logo img {
+  width: 15%;
+  height: 15%;
+}

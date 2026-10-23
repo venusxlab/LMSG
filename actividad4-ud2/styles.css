@@ -1,23 +1,15 @@
 .container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 1.2fr 1.2fr 1.20fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1% 1%;
   grid-auto-flow: row;
   grid-template-areas:
-    "encabezado encabezado encabezado encabezado encabezado encabezado"
-    "pista1 pista1 pista2 pista2 pista3 pista3"
-    "pista1 pista1 pista2 pista2 pista3 pista3"
-    "pista1 pista1 pista2 pista2 pista3 pista3"
-    "pista1 pista1 pista2 pista2 pista3 pista3"
-    "pista1 pista1 pista2 pista2 pista3 pista3"
-    "pista4 pista4 pista5 pista5 pista6 pista6"
-    "pista4 pista4 pista5 pista5 pista6 pista6"
-    "pista4 pista4 pista5 pista5 pista6 pista6"
-    "pista4 pista4 pista5 pista5 pista6 pista6"
-    "pista4 pista4 pista5 pista5 pista6 pista6"
-    "piepagina piepagina piepagina piepagina piepagina piepagina";
-    padding: 0%;
+    "pista1 pista2 pista3"
+    "pista4 pista5 pista6";
+    width: 100%;
+    height: fit-content;
     margin: 0%;
+    padding: 0%;
 }
 
 .encabezado {  display: grid;
@@ -27,7 +19,11 @@
   grid-auto-flow: row;
   grid-template-areas:
     "nombrepagina nombrepagina descripcion-encabezado descripcion-encabezado";
-  grid-area: encabezado;
+  /*grid-area: encabezado;*/
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .nombrepagina { grid-area: nombrepagina; }
@@ -46,6 +42,10 @@
     "precio1 precio1"
     "reservar1 anular1";
   grid-area: pista1;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding-top: 5%;
 }
 
 .imagen1 { grid-area: imagen1; }
@@ -72,6 +72,10 @@
     "precio2 precio2"
     "reservar2 anular2";
   grid-area: pista2;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .imagen2 { grid-area: imagen2; }
@@ -98,6 +102,10 @@
     "precio3 precio3"
     "reservar3 anular3";
   grid-area: pista3;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .imagen3 { grid-area: imagen3; }
@@ -124,6 +132,10 @@
     "precio4 precio4"
     "reservar4 anular4";
   grid-area: pista4;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .imagen4 { grid-area: imagen4; }
@@ -150,6 +162,10 @@
     "precio5 precio5"
     "reservar5 anular5";
   grid-area: pista5;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .imagen5 { grid-area: imagen5; }
@@ -176,6 +192,10 @@
     "precio6 precio6"
     "reservar6 anular6";
   grid-area: pista6;
+  width: 100%;
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .imagen6 { grid-area: imagen6; }
@@ -197,7 +217,10 @@
   grid-auto-flow: row;
   grid-template-areas:
     "direccion direccion horarios horarios";
-  grid-area: piepagina;
+  /*grid-area: piepagina;*/
+  width: 100%;
+  height: 20%;
+  margin: 0%;
 }
 
 .direccion { grid-area: direccion; }
@@ -213,6 +236,9 @@
     width: 80%;
     height: 80%;
     padding-left: 8%;
+    margin: 0%;
+    position: relative;
+    display: flex;
 }
 .pista1{
     align-items: center;

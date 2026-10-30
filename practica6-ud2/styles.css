@@ -1,0 +1,67 @@
+/*
+============================================================================
+1. ESTILOS GENERALES: MÓVILES (Menos de 600px)
+    Como es un diseño mobile first, estos serán los estilos por defecto y son 
+    los primeros que se aplicarán, hasta que sean sobreescritos por otro 
+    media query.
+=========================================================================
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: coral;
+    color: #222;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #2855a6;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: white;
+    border: 2px solid #2855a6;
+    border-radius: 10px;
+}
+
+.grid img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width:600px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    header {
+        background-color: #21856e;
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+}

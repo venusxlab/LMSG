@@ -1,0 +1,214 @@
+/* styles.css */
+
+/* Estilo general del cuerpo */
+
+/*Usamos esto para que se ajuste todo a los bordes*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #002868;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/*Uso los porcentajes tanto en la minima y en la maxima para que siempre ocupen todo*/
+/* estilos imágenes*/
+.heroe img {
+    max-width: 100%;
+    max-height: 100%;
+}    
+
+/*Aplicamos lo mismo en las imagenes del grid*/
+.diseno-grid img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/*Alineo todos los items al centro y le pongo el 100% en width para que ocupen todo el espacio posible.*/
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menú desplegable */
+.desplegable {
+    position: relative;
+}
+
+/*le he cambiado el color de fondo para que se vean las letras*/
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(104, 104, 104);
+    color: black;
+    list-style: none;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.desplegable:hover .menu-desplegable {
+    display: block;
+}
+
+/* Sección de bienvenida */
+.heroe {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+/* Diseño en cuadrícula */
+/*Pongo el width al 100% para que ocupe todo el espacio*/
+.diseno-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #e2e2e2;
+    width: 100%;
+}
+/*Alineo todos los items de esta clase al centro*/
+.item-grid {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Tabla */
+.tabla-noticias {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+/* Galería */
+.galeria {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contenedor-galeria img {
+    width: calc(25% - 1rem);
+    border: 1px solid #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #002868;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*Añadimos media query para que se ajuste a los moviles.*/
+
+@media screen and (max-width: 768px) {
+
+    /*Le he puesto un background un poco diferente*/
+    body{
+        background-color: lightgray;
+    }
+
+    /*He puesto la letra más pequeña para que se vea todo mejor, alineo todo al centro y cambiamos a formato vertical*/
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+
+    /*Pongo izquierda en auto y el right en 0 para que cuando se abra el desplegable vaya hacia la izquierda*/
+    .desplegable:hover .menu-desplegable {
+        display: block;
+        left: auto;
+        right: 0;
+    }
+
+    .contenedor-header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .diseno-grid{
+        grid-template-columns: 1fr;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .contenedor-galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .contenedor-galeria img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+}

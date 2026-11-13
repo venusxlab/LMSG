@@ -67,7 +67,7 @@ header h1 {
     position: relative;
 }
 
-/*le he cambiado el color de fondo para que se vean las letras*/
+/*le he cambiado el color de fondo a gris para que se vean las letras*/
 .menu-desplegable {
     display: none;
     position: absolute;
@@ -174,38 +174,42 @@ footer {
         left: auto;
         right: 0;
     }
-
+    /*Cambio el grid para que sea solo uno.*/
     .contenedor-header{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-
+    /*Pongo el titulo en el centro junto con el menu*/
     header h1 {
         text-align: center;
     }
 
+    /*Lo cambio a una sola columna*/
     .diseno-grid{
         grid-template-columns: 1fr;
     }
 
+    /*Para que la tabla ocupe todo el espacio posible*/
     table{
         width: 100%;
     }
-
+    /*Lo cambiamos para que que esten las imagenes en 2 columnas en vez de que esten en filas*/
     .contenedor-galeria{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
     }
-
+    /*Añado el aspect ratio para que todas las imagenes tengan el mismo tamaño, al igual que el resto de las configuraciones
+    el object fit cover es para mantener proporcion*/
     .contenedor-galeria img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        aspect-ratio: 4 / 3;
     }
-
+    /*Por ultimo aplico el mismo tamaño a todas las imagenes generales*/
     img{
         width: 100%;
         height: auto;
